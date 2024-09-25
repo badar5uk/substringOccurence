@@ -1,15 +1,21 @@
 public class substringOccurence {
 
     public static void main(String[] args) {
-        String str = "I love coding, I love coding in Java";
-        String substr = str.substring(0);
         int counter = 0;
-        if (substr.contains("coding")) {
-            counter++;
-            System.out.println("counter is:" + counter);
+        String str = "banana";
+        String substr = "ana";
+        int endingIndex = substr.length();
+        for (int i = 0; i <= str.length() - substr.length(); i++){
+            String matchingCharacters = str.substring(i, endingIndex++);
+            if (substr.equals(matchingCharacters)) {
+                counter++;
+            }
         }
+        System.out.println("The Substring " + substr +" occurs "+ counter + " times in " + str);
     }
 }
+
+
 
 
 
