@@ -1,4 +1,4 @@
-public class substringOccurence {
+public class SubstringOccurence {
 
     public static void main(String[] args) {
         int counter = 0;
